@@ -134,34 +134,49 @@ img {
 
 // About Page
 .about {
+    img {
+        border: solid $dark-color 3px;
+        border-radius: 5px;
+        //margin-bottom: 0.6rem;
+    }
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 2fr;
     
     & > div {
         padding: 3rem;
     }
 
     .about-main {
-        height: 100vh;
+        //height: 90vh;
+        margin-top: 2rem;
+        //margin-bottom: 1rem;
     }
     .about-info {
+        height: 100vh; //Check this!
         background-color: $dark-color;
+        border-radius: 5px;
         color: #fff;
         margin-top: 3rem;
+        margin-right: 3rem;
 
         .phone {
             padding-top: 2rem;
         }
         .table {
             padding-top: 2rem;
+            font-size: 1.3rem;
+           
         }
     }
 
     .about-history {
+        height: 70vh; //Check this!
         background-color: $dark-color;
         color: #fff;
+        border-radius: 5px;
         font-size: 1.3rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
+        margin-right: 3rem;
         &:first-letter {
             font-size: 5rem;
         }
@@ -171,12 +186,18 @@ img {
     max-width: 400px;
     max-height: 370px;
     padding-top: 1rem;
+    border-radius: 5px;
 }
 
 .about-reviews {
+    background-color: $dark-color;
+    color: #fff;
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 3rem 9rem;
+    margin: 3rem 3rem 0rem 3rem;
+    border-radius: 5px;
     h2 {
         padding-bottom: 1rem;
     }
@@ -186,11 +207,17 @@ img {
 }
 
 .btn {
-    background-color: $dark-color;
-    color: #fff;
+    background-color: #fff;
+    color: $dark-color;
     padding: 0.5rem;
     border-radius: 4px;
 
+}
+
+
+
+td {
+    padding-right: 3rem;
 }
 
 
