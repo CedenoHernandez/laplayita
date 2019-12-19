@@ -160,11 +160,17 @@ img {
     .about-history {
         background-color: $dark-color;
         color: #fff;
+        font-size: 1.3rem;
         margin-top: 3rem;
         &:first-letter {
             font-size: 5rem;
         }
     }
+}
+.map {
+    max-width: 400px;
+    max-height: 370px;
+    padding-top: 1rem;
 }
 
 
@@ -175,8 +181,7 @@ img {
 
 .menu {
     position: relative;
-    background: url('../img/main.jpg') no-repeat center center/cover;
-    height: 100vh;
+    background: url('../img/main.jpg') center center/cover;
 }
 
 .menu-list {
@@ -187,11 +192,14 @@ img {
     margin-right: 9rem;
     text-align: center;
     opacity: 0.95;
+    padding-bottom: 2rem;
     
     .menucat {
         padding: 1.2rem;
+        text-decoration: underline;
     }
     .menucat2 {
         padding: 0.5rem;
+        font-style: italic;
     }
 }
