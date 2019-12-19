@@ -130,3 +130,65 @@ img {
 .fa-shipping-fast {
     color: #FF3008;
 }
+
+
+// About Page
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    & > div {
+        padding: 3rem;
+    }
+
+    .about-main {
+        height: 100vh;
+    }
+    .about-info {
+        background-color: $dark-color;
+        color: #fff;
+        margin-top: 3rem;
+
+        .phone {
+            padding-top: 2rem;
+        }
+        .table {
+            padding-top: 2rem;
+        }
+    }
+
+    .about-history {
+        background-color: $dark-color;
+        color: #fff;
+        margin-top: 3rem;
+        &:first-letter {
+            font-size: 5rem;
+        }
+    }
+}
+
+
+
+
+
+//Menu Page
+
+.menu {
+    position: relative;
+    background: url('../img/main.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.menu-list {
+    background-color: $dark-color;
+    color: #fff;
+    margin: 3rem;
+    text-align: center;
+    
+    .menucat {
+        padding: 1.2rem;
+    }
+    .menucat2 {
+        padding: 0.5rem;
+    }
+}
