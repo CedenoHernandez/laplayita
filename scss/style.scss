@@ -173,6 +173,26 @@ img {
     padding-top: 1rem;
 }
 
+.about-reviews {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    h2 {
+        padding-bottom: 1rem;
+    }
+    #google-reviews {
+        padding-bottom: 1rem;
+    }
+}
+
+.btn {
+    background-color: $dark-color;
+    color: #fff;
+    padding: 0.2rem;
+    border-radius: 4px;
+
+}
+
 
 
 
