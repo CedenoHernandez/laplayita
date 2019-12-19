@@ -200,7 +200,8 @@ img {
 //Menu Page
 
 .menu {
-    position: relative;
+    position: absolute;
+    width: 100%;
     background: url('../img/main.jpg') center center/cover;
 }
 
@@ -208,18 +209,27 @@ img {
     background-color: $dark-color;
     color: #fff;
     margin-top: 3rem;
-    margin-left: 9rem;
-    margin-right: 9rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     text-align: center;
     opacity: 0.95;
     padding-bottom: 2rem;
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
     
     .menucat {
         padding: 1.2rem;
         text-decoration: underline;
+
     }
     .menucat2 {
         padding: 0.5rem;
         font-style: italic;
     }
+}
+
+.col-1, .col-2 {
+    width: 50%;
 }
