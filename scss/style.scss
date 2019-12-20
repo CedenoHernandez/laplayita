@@ -135,12 +135,12 @@ img {
 // About Page
 .about {
     img {
-        border: solid $dark-color 3px;
+        border: solid $dark-color 7px;
         border-radius: 5px;
         //margin-bottom: 0.6rem;
     }
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 3fr 2fr;
     
     & > div {
         padding: 3rem;
@@ -158,6 +158,10 @@ img {
         color: #fff;
         margin-top: 3rem;
         margin-right: 3rem;
+        //margin: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
         .phone {
             padding-top: 2rem;
@@ -165,18 +169,29 @@ img {
         .table {
             padding-top: 2rem;
             font-size: 1.3rem;
-           
+            margin: auto;
+        }
+        .address {
+            padding-bottom: 0.3rem;
+        }
+        .hours {
+            padding-bottom: 0.3rem;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
     }
 
     .about-history {
-        height: 70vh; //Check this!
+        height: 80vh; //Check this!
         background-color: $dark-color;
         color: #fff;
         border-radius: 5px;
         font-size: 1.3rem;
         margin-top: 5rem;
         margin-right: 3rem;
+        //display: block;
+        //margin: auto;
         &:first-letter {
             font-size: 5rem;
         }
@@ -202,13 +217,14 @@ img {
         padding-bottom: 1rem;
     }
     #google-reviews {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 }
 
 .btn {
     background-color: #fff;
     color: $dark-color;
+    font-weight: bold;
     padding: 0.5rem;
     border-radius: 4px;
 
@@ -217,9 +233,8 @@ img {
 
 
 td {
-    padding-right: 3rem;
+    padding-right: 1.6rem;
 }
-
 
 
 
@@ -232,17 +247,38 @@ td {
     background: url('../img/main.jpg') center center/cover;
 }
 
+.menu-title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    background-color: $dark-color;
+    opacity: 0.95;
+    padding: 2rem;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.fa-utensils {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .menu-list {
     background-color: $dark-color;
     color: #fff;
-    margin-top: 3rem;
     margin-left: 7rem;
     margin-right: 7rem;
     text-align: center;
     opacity: 0.95;
     padding-bottom: 2rem;
     display: flex;
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: 5px;
     
