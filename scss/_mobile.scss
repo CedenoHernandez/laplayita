@@ -131,12 +131,12 @@
 
 // Tablets
 
-@media (min-width: 751px) and (max-width: 1000px) {
-    .about {
-        
+@media (min-width: 751px) and (max-width: 1200px) {
+    .about {  
         grid-template-columns: 2fr 4fr;
     }
     .about-info {
         margin-left: 3rem;
     }
+   
 }
