@@ -151,7 +151,7 @@ img {
         //margin-top: 2rem;
         display: block;
         margin: auto;
-        //margin-top: 3rem;
+        margin-top: 3rem;
         //margin-bottom: 1rem;
     }
     .about-info {
@@ -219,11 +219,12 @@ img {
 }
 
 .map {
-    max-width: 20rem;
-    max-height: 20rem;
+    max-width: 18rem;
+    max-height: 18rem;
     padding-top: 1rem;
     border-radius: 5px;
 }
+
 
 .about-reviews {
     background-color: $dark-color;

@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 
   // Navbar
    .navbar {
@@ -125,5 +125,18 @@
 
     .col-1, .col-2 {
         width: 100%;
+    }
+}
+
+
+// Tablets
+
+@media (min-width: 751px) and (max-width: 1000px) {
+    .about {
+        
+        grid-template-columns: 2fr 4fr;
+    }
+    .about-info {
+        margin-left: 3rem;
     }
 }
