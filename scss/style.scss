@@ -135,25 +135,27 @@ img {
     img {
         border: solid $dark-color 7px;
         border-radius: 5px;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
     }
-    display: grid;
-    grid-template-columns: 3fr 4fr 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
     
     & > div {
         padding: 3rem;
+        width: 500px;
     }
 
-    .about-main {
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
     .about-info {
         background-color: $dark-color;
         border-radius: 5px;
         color: #fff;
-        margin-top: 5rem;
-        margin-right: 3rem;
+        width: 40%;
+        margin-left: 3rem;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -182,27 +184,23 @@ img {
         color: #fff;
         border-radius: 5px;
         font-size: 1.3rem;
-        margin-top: 5rem;
-        margin-left: 3rem;
-
-        .sombrero-pic {
+        width: 40%;
+        .mayan-pic {
             display: block;
             margin: auto;
-            width: 70%;
-            margin-top: 3rem;
+            height: 300px;
+            width: 300px;
+            object-fit: contain;
+            margin-top: 0;
         }
 
         &:first-letter {
             font-size: 5rem;
         }
     }
-    .about-pics,
-    .about-pics2,
     .about-pics3 {
-        display: block;
-        margin: auto;
+        margin-bottom: 0;
     }
-
 }
 
 .map {
@@ -212,7 +210,15 @@ img {
     border-radius: 5px;
 }
 
+.food-pics{
+    display: flex;
+    justify-content: center;
+}
 
+.food-pics img {
+    margin: 1rem;
+    width: 300px;
+}
 .about-reviews {
     background-color: $dark-color;
     color: #fff;
@@ -309,3 +315,80 @@ td {
 // Media Queries
 
 @import 'mobile';
+
+@media (max-width: 1000px) {
+    .about {
+        .about-info {
+            width: 100%;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 2rem;
+        }
+        .about-history {
+            width: 100%;
+            margin-left: 3rem;
+            margin-right: 3rem;
+        }
+    }
+    .food-pics{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .food-pics img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 650px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .food-pics{
+        margin-left: 0;
+    }
+    .food-pics img {
+        width: 350px;
+        margin-left: 0;
+    }
+    .about {
+        
+        & > div {
+            margin: 0;
+            width: 380px;
+        }
+    .about-history {
+        margin: 0;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+    .about-info{
+        margin: 0;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    }
+    .about-pics {
+        margin: 0;
+    }
+    .food-pics{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .food-pics img {
+        height: 200px;
+        margin: 0;
+        padding: 0;
+    }
+    .about-reviews {
+        width: 100%;
+        padding: 1rem;
+    }
+    .about-reviews h2 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
